@@ -16,7 +16,7 @@
 			<br>
 			Jeste li sigurni da želite trajno obrisati Vaš profil? Kasnije ga ne možete vratiti. <p> <br>
 			<button><a style="text-decoration: none" href="delete.php" class="inline">U redu</a></button>
-			<button><a style="text-decoration: none" href="poc.php" class="inline">Odustani</a></button>
+			<button><a style="text-decoration: none" href="index.php" class="inline">Odustani</a></button>
 		</div>
 	</div>
 </body>
