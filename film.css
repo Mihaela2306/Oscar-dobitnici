@@ -1,0 +1,98 @@
+body {
+		background-image: url("https://wallpaperaccess.com/full/229832.jpg");
+		margin: 0;
+		color: #cccccc;
+	}
+
+a {
+  color: #cccccc;
+  text-decoration: none;
+}
+
+img {
+	border: 2px solid #666666;
+	border-radius: 15px;
+	object-fit: cover;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+button {
+	border: 2px solid #666666;
+	border-radius: 17px;
+	background-color: #262626;
+	color: #cccccc;
+}
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	font-size: 19px;
+
+	display: grid;
+
+	grid-template-columns: 50px 1fr 10px 2fr 10px 50px;
+	grid-template-rows: 50px 50px 2fr 1fr 10px 50px;
+
+	grid-gap:  10px;
+	column-gap: 10px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.container div {
+	padding: 10px;
+	border: 2px solid #666666;
+	border-radius: 15px; 
+	background-color: black;
+}
+
+.header {
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 2;
+	grid-column-end: 6;
+}
+
+.container div.poster {
+	border: 0px;
+	background-color: transparent;
+	grid-row-start: 3;
+	grid-row-end: 6;
+	grid-column-start: 2;
+	grid-column-end: 3;
+
+	display: flex;
+    justify-content: center;
+	align-items: center;
+}
+
+.bg {
+	grid-row-start: 3;
+	grid-row-end: 6;
+	grid-column-start: 3;
+	grid-column-end: 6;
+}
+
+.container div.film {
+	border: 0px;
+	background-color: transparent;
+    line-height: 150%;
+    font-size: 1vw;
+
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 3;
+	grid-column-end: 6;
+}
+
+.opis{
+	grid-row-start: 4;
+	grid-row-end: 5;
+	grid-column-start: 4;
+	grid-column-end: 5;
+
+	overflow-y: scroll;
+}

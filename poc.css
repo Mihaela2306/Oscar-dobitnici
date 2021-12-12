@@ -1,0 +1,188 @@
+body {
+		background-image: url("https://wallpaperaccess.com/full/229832.jpg");
+		margin: 0;
+		color: #cccccc;
+	}
+a {
+  color: #cccccc;
+  text-decoration: none;
+}
+
+button {
+  border: transparent;
+  border-radius: 15px;
+  background-color: #262626;
+  font-size: 19px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  color: #cccccc;
+}
+
+input, textarea {
+  background-color : #262626; 
+  color: #cccccc;
+  border: transparent;
+}
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	font-size: 19px;
+
+	display: grid;
+
+	grid-template-columns: 1fr 2fr 2fr 1fr;
+	grid-template-rows: 1fr 0.5fr 50px 50px 60px 1fr;
+
+	grid-gap:  10px;
+	column-gap: 10px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.container div {
+	padding: 10px;
+	border: 2px solid #666666;
+	border-radius: 15px; 
+	background-color: black;
+}
+
+.uvod {
+	display: inline-block;
+	text-align: center;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 2;
+	grid-column-end: 4;
+}
+
+.svi {
+	text-align: center;
+	font-weight: bold;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+.random {
+	text-align: center;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 3;
+	grid-column-end: 4;	
+}
+
+.god {
+	text-align: center;
+	grid-row-start: 4;
+	grid-row-end: 5;
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+.zanr {
+	text-align: center;
+	grid-row-start: 4;
+	grid-row-end: 5;
+	grid-column-start: 3;
+	grid-column-end: 4;
+}
+
+/* Dropdown nebuloze*/
+
+ /* Dropdown Button */
+.dropbtn {
+  background-color: black;
+  color: #cccccc;
+  padding: 0px;
+  font-size: 19px;
+  font-weight: bold;
+  border: 2px solid transparent;
+  border-radius: 15px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  border: 0px;
+  background-color: transparent;
+  text-align: center;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 3;	
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown2 {
+  border: 0px;
+  background-color: transparent;
+  text-align: center;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 3;
+  grid-column-end: 4;	
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: under;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-size: 16px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #cccccc;
+  padding: 3px 4px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #262626;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown2:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #262626;} 
+.dropdown2:hover .dropbtn {background-color: #262626;} 
+
+
+/*               *   *                 */
+/*          *             *            */
+/*      *                     *        */
+/*    *                         *      */
+         /*Search bar nebuloze*/
+.search {
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column-start: 2;
+  grid-column-end: 4;
+
+  text-align: center;
+}
+
+#myInput {
+  background-image: url('/img/search.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  background-color: black;
+  color: #cccccc;
+  width: 100%; /* Full-width */
+  font-size: 19px; /* Increase font-size */
+  padding: 6px 10px 6px 20px; /* Add some padding */
+  border: transparent; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}

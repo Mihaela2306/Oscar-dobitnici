@@ -1,0 +1,102 @@
+body {
+		background-image: url("https://wallpaperaccess.com/full/229832.jpg");
+		margin: 0;
+		color: #cccccc;
+	}
+
+img {
+	border: 2px solid #666666;
+	border-radius: 15px;
+	float:center;
+	height:center;
+	position: center;
+}
+
+button {
+	border: transparent;
+	border-radius: 15px;
+	background-color: transparent;
+	font-size: 19px;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	color: #cccccc;
+}
+
+a {
+	color: #cccccc;
+	font-weight: bold;
+}
+
+p.big {
+  line-height: 2.5;
+}
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	font-size: 19px;
+
+	display: grid;
+
+	grid-template-columns: 1fr 215px 2fr 1fr;
+	grid-template-rows: 1fr 215px 50px 2fr 1fr;
+
+	grid-gap:  10px;
+	column-gap: 10px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.container div {
+	padding: 10px;
+	border: 2px solid #666666;
+	border-radius: 15px; 
+	background-color: black;
+}
+
+.container div.slika {
+	border: 0px;
+	background-color: transparent;
+	display: flex;
+    justify-content: center;
+	align-items: center;	
+
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+.promijeni {
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 2;
+	grid-column-end: 3;
+
+	display: flex;
+    justify-content: center;
+	align-items: center;
+}
+
+.opis {
+    display: flex;
+    /*justify-content: center;*/
+	align-items: center;
+
+	grid-row-start: 2;
+	grid-row-end: 4;
+	grid-column-start: 3;
+	grid-column-end: 4;
+}
+
+.lista {
+	grid-row-start: 4;
+	grid-row-end: 5;
+	grid-column-start: 2;
+	grid-column-end: 4;
+	overflow-y: scroll;
+}
+
+.film {}

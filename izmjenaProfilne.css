@@ -1,0 +1,117 @@
+body {
+		background-image: url("https://wallpaperaccess.com/full/229832.jpg");
+		margin: 0;
+		color: #cccccc;
+	}
+
+button {
+	border: transparent;
+	border-radius: 15px;
+	background-color: transparent;
+	font-size: 19px;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	color: #cccccc;
+}
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	font-size: 19px;
+
+	display: grid;
+
+	grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr 0.5fr 1fr;
+	grid-template-rows: 1fr 50px 1fr 1fr 50px 1fr;
+
+	grid-gap:  20px;
+	column-gap: 20px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.container div {
+	padding: 10px;
+	border: 2px solid #666666;
+	border-radius: 15px; 
+	background-color: black;
+
+	display: flex;
+    justify-content: center;
+	align-items: center;
+}
+
+.naslov {
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 2;
+	grid-column-end: 6;
+
+}
+
+.spremi {
+	grid-row-start: 5;
+	grid-row-end: 6;
+	grid-column-start: 3;
+	grid-column-end: 5;
+}
+
+.img1 {
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+.img2 {
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 3;
+	grid-column-end: 4;
+}
+
+.img3 {
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 4;
+	grid-column-end: 5;
+}
+
+.img4 {
+	grid-row-start: 4;
+	grid-row-end: 5;
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+.img5 {
+	grid-row-start: 4;
+	grid-row-end: 5;
+	grid-column-start: 3;
+	grid-column-end: 4;
+}
+
+.img6 {
+	grid-row-start: 4;
+	grid-row-end: 5;
+	grid-column-start: 4;
+	grid-column-end: 5;
+}
+
+.img7 {
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 5;
+	grid-column-end: 6;
+}
+
+.img8 {
+	grid-row-start: 4;
+	grid-row-end: 5;
+	grid-column-start: 5;
+	grid-column-end: 6;
+}
+
+
