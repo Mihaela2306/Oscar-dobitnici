@@ -53,7 +53,7 @@ else if($id == "casablanca"){
 	$slika = 'https://avatarfiles.alphacoders.com/717/thumb-71741.jpg';
 	
 }else{
-	header("Location: ../PROJEKT/profil.php?error=idnema");
+	header("Location: ../profil.php?error=idnema");
 }
 
 	$query = "UPDATE korisnici SET
@@ -62,12 +62,12 @@ else if($id == "casablanca"){
 	$result = mysqli_query($conn, $query);
 	
 	if($result){
-		header("Location: ../PROJEKT/profil.php?error=none");
+		header("Location: ../profil.php?error=none");
 	} else {
 		echo("UPDATE komanda nije uspjela. Kontaktirajte Web administratora!");
 	}
 
 
 }else{
-	header("Location: ../PROJEKT/pocetna.php");
+	header("Location: ../index.php");
 }
