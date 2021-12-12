@@ -10,7 +10,7 @@
 <nav>
 	<p>Oscar filmovi</p>
 	<ul>
-		<li><a href="poc.php">Početna</a> </li>
+		<li><a href="index.php">Početna</a> </li>
 		
 		<?php
 			if(isset($_SESSION["id"])){
