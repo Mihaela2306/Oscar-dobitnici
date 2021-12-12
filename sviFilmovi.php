@@ -95,7 +95,7 @@ else{
 		echo "<div class='container'>";
 		echo "<div class='okvir'>";
 		echo "<div class='button'>";
-		echo "<a href='http://localhost/PROJEKT/poc.php'>Ne postoji film pod ovim upitom! Odi natrag.</a>";
+		echo "<a href='https://oscar-mihaela.herokuapp.com/index.php'>Ne postoji film pod ovim upitom! Odi natrag.</a>";
 		echo "</div>";
 		echo "</div>";
 		echo "</div>";
@@ -110,7 +110,7 @@ else{
 				while($row = $result->fetch_assoc()){
 					echo "<div class='film'>";
 					?>
-					<a href="http://localhost/PROJEKT/film.php?filmId=<?php echo $row['id']?>"><b> <?php echo $row['imeFilma']?></b><br>
+					<a href="https://oscar-mihaela.herokuapp.com/film.php?filmId=<?php echo $row['id']?>"><b> <?php echo $row['imeFilma']?></b><br>
 					
 					<?php
 					echo "<small>".$row['redateljFilma']."</small><br>";
