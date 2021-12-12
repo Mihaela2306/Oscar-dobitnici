@@ -9,15 +9,15 @@ if(isset($_POST["submit"])){ //provjeravamo ako je korisnik došao sa signup str
 	require_once 'funkcije.php';
 	
 	if(emptyInputUid($username) !== false){
-		header("location: ../PROJEKT/promjenauid.php?error=emptyinput");
+		header("location: ../promjenauid.php?error=emptyinput");
 		exit();
 	}
 	if(invalidUid($username) !== false){
-		header("Location: ../PROJEKT/promjenauid.php?error=invaliduid");
+		header("Location: ../promjenauid.php?error=invaliduid");
 		exit();
 	}
 	if(newUidExists($conn, $username) !== false){
-		header("Location: ../PROJEKT/promjenauid.php?error=usernametaken");
+		header("Location: ../promjenauid.php?error=usernametaken");
 		exit();
 	}
 	
@@ -26,12 +26,12 @@ if(isset($_POST["submit"])){ //provjeravamo ako je korisnik došao sa signup str
 	
 	$result = mysqli_query($conn, $query);
 	if($result){
-		header("Location: ../PROJEKT/promjenauid.php?error=none");
+		header("Location: ../promjenauid.php?error=none");
 	} else {
 		echo("UPDATE komanda nije uspjela. Kontaktirajte Web administratora!");
 	}
 	
 }else{
-		header("Location: ../PROJEKT/promjenauid.php");
+		header("Location: ../promjenauid.php");
 		exit();
 }
