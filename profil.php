@@ -92,7 +92,7 @@
 			if($result->num_rows > 0){
 				while($row = $result->fetch_assoc()){
 					?>
-					<a href="http://localhost/PROJEKT/film.php?filmId=<?php echo $row['filmId']?>"><br>
+					<a href="https://oscar-mihaela.herokuapp.com/film.php?filmId=<?php echo $row['filmId']?>"><br>
 					
 					<?php
 					$q = "SELECT * FROM filmovi WHERE id = '". $row['filmId'] . "';";
