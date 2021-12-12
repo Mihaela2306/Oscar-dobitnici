@@ -11,12 +11,12 @@ if(isset($_POST["submit"])){
 	require_once 'funkcije.php';
 	
 	if(emptyInputLogin($username, $pwd) !== false){
-		header("Location: ../PROJEKT/delete.php?error=emptyinput");
+		header("Location: ../delete.php?error=emptyinput");
 		exit();
 	}
 	
 	if(deleteLoginConfirm($conn, $username, $pwd, $idKorisnika) === false){
-		header("Location: ../PROJEKT/delete.php?error=wronginput");
+		header("Location: ../delete.php?error=wronginput");
 		exit();
 	}
 	
@@ -24,12 +24,12 @@ if(isset($_POST["submit"])){
 	
 	$result = mysqli_query($conn, $query);
 	if($result){
-		header("Location: ../PROJEKT/logout.php");
+		header("Location: ../logout.php");
 	} else {
 		echo("UPDATE komanda nije uspjela. Kontaktirajte Web administratora!");
 	}
 	
 }else{
-	header("Location: ../PROJEKT/delete.php");
+	header("Location: ../delete.php");
 	exit();
 }
