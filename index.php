@@ -17,7 +17,7 @@
 		</div>
 
 		<div class="svi">
-			<a href="http://localhost/PROJEKT/sviFilmovi.php">Svi filmovi</a>
+			<a href="https://oscar-mihaela.herokuapp.com/sviFilmovi.php">Svi filmovi</a>
 		</div>
 
 <?php 
@@ -30,38 +30,38 @@ $row = mysqli_fetch_assoc($result);
 
 		echo "<div class='random'>";
 		?>
-		<a href="http://localhost/PROJEKT/film.php?filmId=<?php echo $row['id']?>">Nasumični odabir</a>
+		<a href="https://oscar-mihaela.herokuapp.com/film.php?filmId=<?php echo $row['id']?>">Nasumični odabir</a>
 		</div>
 
 		<div class="dropdown">
  			<button class="dropbtn">Desetljeća</button>
   			<div class="dropdown-content">
-    			<a href="http://localhost/PROJEKT/sviFilmovi.php?god=1920">1920-te</a>
-    			<a href="http://localhost/PROJEKT/sviFilmovi.php?god=1930">1930-te</a>
-    			<a href="http://localhost/PROJEKT/sviFilmovi.php?god=1940">1940-te</a>
-    			<a href="http://localhost/PROJEKT/sviFilmovi.php?god=1950">1950-te</a>
-    			<a href="http://localhost/PROJEKT/sviFilmovi.php?god=1960">1960-te</a>
-    			<a href="http://localhost/PROJEKT/sviFilmovi.php?god=1970">1970-te</a>
-    			<a href="http://localhost/PROJEKT/sviFilmovi.php?god=1980">1980-te</a>
-    			<a href="http://localhost/PROJEKT/sviFilmovi.php?god=1990">1990-te</a>
-    			<a href="http://localhost/PROJEKT/sviFilmovi.php?god=2000">2000-te</a>
-    			<a href="http://localhost/PROJEKT/sviFilmovi.php?god=2010">2010-te</a>
+    			<a href="https://oscar-mihaela.herokuapp.com/sviFilmovi.php?god=1920">1920-te</a>
+    			<a href="https://oscar-mihaela.herokuapp.com/sviFilmovi.php?god=1930">1930-te</a>
+    			<a href="https://oscar-mihaela.herokuapp.com/sviFilmovi.php?god=1940">1940-te</a>
+    			<a href="https://oscar-mihaela.herokuapp.com/sviFilmovi.php?god=1950">1950-te</a>
+    			<a href="https://oscar-mihaela.herokuapp.com/sviFilmovi.php?god=1960">1960-te</a>
+    			<a href="https://oscar-mihaela.herokuapp.com/sviFilmovi.php?god=1970">1970-te</a>
+    			<a href="https://oscar-mihaela.herokuapp.com/sviFilmovi.php?god=1980">1980-te</a>
+    			<a href="https://oscar-mihaela.herokuapp.com/sviFilmovi.php?god=1990">1990-te</a>
+    			<a href="https://oscar-mihaela.herokuapp.com/sviFilmovi.php?god=2000">2000-te</a>
+    			<a href="https://oscar-mihaela.herokuapp.com/sviFilmovi.php?god=2010">2010-te</a>
   			</div>
 		</div>
 
 		<div class="dropdown2">
 			<button class="dropbtn">Žanrovi</button>
   			<div class="dropdown-content">
-    			<a href="http://localhost/PROJEKT/sviFilmovi.php?zanr=Akcija">Akcija</a> 
-    			<a href="http://localhost/PROJEKT/sviFilmovi.php?zanr=Avantura">Avantura</a>
-    			<a href="http://localhost/PROJEKT/sviFilmovi.php?zanr=Biografija">Biografija</a>
-    			<a href="http://localhost/PROJEKT/sviFilmovi.php?zanr=Drama">Drama</a>
-    			<a href="http://localhost/PROJEKT/sviFilmovi.php?zanr=Kaubojski_film">Kaubojski film</a>
-    			<a href="http://localhost/PROJEKT/sviFilmovi.php?zanr=Komedija">Komedija</a>
-    			<a href="http://localhost/PROJEKT/sviFilmovi.php?zanr=Krimi">Krimi</a>
-    			<a href="http://localhost/PROJEKT/sviFilmovi.php?zanr=Mjuzikl">Mjuzikl</a>
-    			<a href="http://localhost/PROJEKT/sviFilmovi.php?zanr=Ratni_film">Ratni film</a>
-				<a href="http://localhost/PROJEKT/sviFilmovi.php?zanr=Sport">Sport</a>
+    			<a href="https://oscar-mihaela.herokuapp.com/sviFilmovi.php?zanr=Akcija">Akcija</a> 
+    			<a href="https://oscar-mihaela.herokuapp.com/sviFilmovi.php?zanr=Avantura">Avantura</a>
+    			<a href="https://oscar-mihaela.herokuapp.com/sviFilmovi.php?zanr=Biografija">Biografija</a>
+    			<a href="https://oscar-mihaela.herokuapp.com/sviFilmovi.php?zanr=Drama">Drama</a>
+    			<a href="https://oscar-mihaela.herokuapp.com/sviFilmovi.php?zanr=Kaubojski_film">Kaubojski film</a>
+    			<a href="https://oscar-mihaela.herokuapp.com/sviFilmovi.php?zanr=Komedija">Komedija</a>
+    			<a href="https://oscar-mihaela.herokuapp.com/sviFilmovi.php?zanr=Krimi">Krimi</a>
+    			<a href="https://oscar-mihaela.herokuapp.com/sviFilmovi.php?zanr=Mjuzikl">Mjuzikl</a>
+    			<a href="https://oscar-mihaela.herokuapp.com/sviFilmovi.php?zanr=Ratni_film">Ratni film</a>
+				<a href="https://oscar-mihaela.herokuapp.com/sviFilmovi.php?zanr=Sport">Sport</a>
   			</div>
 		</div>
 
