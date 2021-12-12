@@ -7,7 +7,7 @@ if(isset($_GET["filmId"])){
 	$ID = $_GET["filmId"];
 	$sql = "SELECT * FROM filmovi WHERE id='" . $ID ."'";
 }else{
-	header("Location: ../PROJEKT/pocetna.php");
+	header("Location: ../index.php");
 }
 
 	$result = mysqli_query($conn, $sql);
@@ -24,7 +24,7 @@ if(isset($_GET["filmId"])){
 			} else if ($ratingFilma < 1 || $ratingFilma > 10){
 				echo "<script>alert('Nevažeća ocjena upisana!')</script>";
 			} else {
-				header("Location: ../PROJEKT/dodajFilm.php?filmId=" . $ID . "&rating=" . $ratingFilma);
+				header("Location: ../dodajFilm.php?filmId=" . $ID . "&rating=" . $ratingFilma);
 			}
 		}
 	}
