@@ -11,29 +11,29 @@ if(isset($_POST["submit"])){ //provjeravamo ako je korisnik došao sa signup str
 	require_once 'funkcije.php';
 	
 	if(emptyInputSignup($name, $email, $username, $pwd, $pwdRepeat) !== false){
-		header("location: ../PROJEKT/signup.php?error=emptyinput");
+		header("location: ../signup.php?error=emptyinput");
 		exit();
 	}
 	if(invalidUid($username) !== false){
-		header("Location: ../PROJEKT/signup.php?error=invaliduid");
+		header("Location: ../signup.php?error=invaliduid");
 		exit();
 	}
 	if(invalidEmail($email) !== false){
-		header("Location: ../PROJEKT/signup.php?error=invalidemail");
+		header("Location: ../signup.php?error=invalidemail");
 		exit();
 	}
 	if(pwdMatch($pwd, $pwdRepeat) !== false){
-		header("Location: ../PROJEKT/signup.php?error=passwordsdontmatch");
+		header("Location: ../signup.php?error=passwordsdontmatch");
 		exit();
 	}
 	if(uidExists($conn, $username, $email) !== false){
-		header("Location: ../PROJEKT/signup.php?error=usernametaken");
+		header("Location: ../signup.php?error=usernametaken");
 		exit();
 	}
 	
 	createUser($conn, $name, $email, $username, $pwd);
 	
 }else{
-		header("Location: ../PROJEKT/signup.php");
+		header("Location: ../signup.php");
 		exit();
 }
