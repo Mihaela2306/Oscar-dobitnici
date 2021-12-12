@@ -17,7 +17,7 @@
 		Upišite Vaše novo korisničko ime:<br><br>
 		<p><input type="text" name="uid" size="30" /></p><br>
 		<p><button type="submit" name="submit">Potvrdi</button>
-		<button><a style="text-decoration: none" href="poc.php">Odustani</a></button>
+		<button><a style="text-decoration: none" href="index.php">Odustani</a></button>
 		</form>
 	</div>
 </div>
