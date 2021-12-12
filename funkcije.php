@@ -59,7 +59,7 @@ function uidExists($conn, $username, $email){
 	$sql = "SELECT * FROM korisnici WHERE uidKorisnika = ? OR emailKorisnika = ?;";
 	$stmt = mysqli_stmt_init($conn);
 	if(!mysqli_stmt_prepare($stmt, $sql)){
-		header("Location: ../PROJEKT/signup.php?error=stmtfailed");
+		header("Location: ../signup.php?error=stmtfailed");
 		exit();
 	}	
 	mysqli_stmt_bind_param($stmt, "ss", $username, $email);
@@ -82,7 +82,7 @@ function newUidExists($conn, $username){
 	$sql = "SELECT * FROM korisnici WHERE uidKorisnika = '$username';";
 	$stmt = mysqli_stmt_init($conn);
 	if(!mysqli_stmt_prepare($stmt, $sql)){
-		header("Location: ../PROJEKT/promjenauid.php?error=stmtfailed");
+		header("Location: ../promjenauid.php?error=stmtfailed");
 		exit();
 	}	
 	mysqli_stmt_execute($stmt);
@@ -104,7 +104,7 @@ function createUser($conn, $name, $email, $username, $pwd){
 	$sql = "INSERT INTO korisnici (imeKorisnika, emailKorisnika, uidKorisnika, lozinka) VALUES (?, ?, ?, ?);";
 	$stmt = mysqli_stmt_init($conn);
 	if(!mysqli_stmt_prepare($stmt, $sql)){
-		header("Location: ../PROJEKT/signup.php?error=stmtfailed");
+		header("Location: ../signup.php?error=stmtfailed");
 		exit();
 	}	
 	
@@ -113,7 +113,7 @@ function createUser($conn, $name, $email, $username, $pwd){
 	mysqli_stmt_bind_param($stmt, "ssss", $name, $email, $username, $hashedPwd);
 	mysqli_stmt_execute($stmt);
 	mysqli_stmt_close($stmt);
-	header("Location: ../PROJEKT/signup.php?error=none");
+	header("Location: ../signup.php?error=none");
 	exit();
 
 }
@@ -133,7 +133,7 @@ function loginUser($conn, $username, $pwd){
 	$uidExists = uidExists($conn, $username, $username);
 	
 	if($uidExists === false){
-		header("location: ../PROJEKT/login.php?error=wronglogin");
+		header("location: ../login.php?error=wronglogin");
 		exit();
 	}
 	
@@ -141,13 +141,13 @@ function loginUser($conn, $username, $pwd){
 	$checkPwd = password_verify($pwd, $pwdHashed);
 	
 	if($checkPwd === false){
-		header("location: ../PROJEKT/login.php?error=wronglogin");
+		header("location: ../login.php?error=wronglogin");
 		exit();
 	}else if($checkPwd === true){
 		session_start();
 		$_SESSION["id"] = $uidExists["id"];
 		$_SESSION["uidKorisnika"] = $uidExists["uidKorisnika"];
-		header("location: ../PROJEKT/poc.php");
+		header("location: ../index.php");
 		exit();
 	}
 }
