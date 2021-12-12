@@ -9,12 +9,12 @@ if(isset($_POST["submit"])){
 	require_once 'funkcije.php';
 	
 	if(emptyInputLogin($username, $pwd) !== false){
-		header("Location: ../PROJEKT/login.php?error=emptyinput");
+		header("Location: ../login.php?error=emptyinput");
 		exit();
 	}
 	
 	loginUser($conn, $username, $pwd);
 }else{
-	header("Location: ../PROJEKT/login.php");
+	header("Location: ../login.php");
 	exit();
 }
